@@ -10,8 +10,19 @@ router.post("/register",async(req,res)=>{
     res.send(result);
 })
 
-router.post("/login",(req,res)=>{
-    res.send("login page called");
+router.post("/login",async(req,res)=>{
+    let data=req.body;
+    let emailcheck=await users.findOne({email:data.email});
+    if(emailcheck){
+        let passcheck=await bcrypt.compare(data.password,emailcheck.password);
+        if(passcheck){
+            res.send("login successfull");
+        }else{
+            res.send("password wrong");
+        }
+    }else{
+        res.send("user not found");
+    }
 })
 
 router.get("/viewtask",(req,res)=>{
