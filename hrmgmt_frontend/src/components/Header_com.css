@@ -1,0 +1,400 @@
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.custom-navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+  border-bottom: 3px solid #3b82f6;
+}
+
+
+/* =========================================
+   NAVBAR CONTAINER
+========================================= */
+
+.navbar-container {
+  max-width: 1200px;
+  min-height: 72px;
+
+  margin: auto;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.brand-logo {
+  color: white;
+  text-decoration: none;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.brand-logo:hover {
+  color: #93c5fd;
+}
+
+
+/* =========================================
+   NAVBAR CONTENT
+========================================= */
+
+.navbar-content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 50px;
+}
+
+
+/* =========================================
+   LEFT SIDE LINKS
+========================================= */
+
+.main-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* Navigation Links */
+
+.nav-item-link {
+  color: white;
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.nav-item-link:hover {
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.15);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-btn {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 9px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #1e3a8a;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.register-btn {
+  color: #1e3a8a;
+  background-color: white;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 9px 20px;
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ASSIGN TASK
+========================================= */
+
+.assign-btn {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 9px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.assign-btn:hover {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+
+/* =========================================
+   EMPLOYEE HOME
+========================================= */
+
+.employee-btn {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 9px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.employee-btn:hover {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.logout-btn {
+  background-color: #dc3545;
+
+  color: white;
+
+  border: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 9px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 992px) {
+
+  .navbar-content {
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-btn {
+  display: none;
+
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 7px;
+
+  padding: 7px 9px;
+
+  margin-left: auto;
+
+  cursor: pointer;
+}
+
+.mobile-menu-btn span {
+  display: block;
+
+  width: 23px;
+  height: 2px;
+
+  background-color: white;
+
+  margin: 5px 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .navbar-container {
+    min-height: 65px;
+
+    padding: 10px 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navbar-content {
+    width: 100%;
+
+    margin-left: 0;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 15px 0 5px;
+  }
+
+  .main-links {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 3px;
+  }
+
+  .nav-item-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-links {
+    width: 100%;
+
+    flex-direction: column;
+
+    margin-top: 10px;
+
+    gap: 7px;
+  }
+
+  .login-btn,
+  .register-btn,
+  .assign-btn,
+  .employee-btn,
+  .logout-btn {
+    width: 100%;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .brand-logo {
+    font-size: 21px;
+  }
+
+  .navbar-container {
+    padding: 10px 15px;
+  }
+
+  .navbar-content {
+    padding-top: 12px;
+  }
+
+}
